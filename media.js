@@ -25,7 +25,7 @@ const MostrarNotaFaltante = () => {
     const { notaAvt, media } = CalcularQuantoPrecisaAvt(notaAv1.value, notaAv2.value)
 
     if (notaAvt >= 7 && notaAvt <= 10) {
-        outMedia.innerText = `vix maria tu ta precisando tirar ${notaAvt} na AVT pra passar se arrastandoKKKKKKKKKKK só pra ficar com a media ${media} KKKKKK tu acha`
+        outMedia.innerText = `vix maria tu ta precisando tirar ${notaAvt} na AVT pra passar se arrastandoKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK só pra ficar com a media ${media} KKKKKK tu acha`
         setTimeout(()=>{
             window.open('https://www.youtube.com/watch?v=zh-sP-MyDCo') 
         },5300)
