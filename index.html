@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <h1>Calcula minha desgraça</h1>
-    <p>
-        Nota Av1
-        <input type="number" id="inAv1">
-    </p>
-    <p>
-        Nota Av2
-        <input type="number" id="inAv2">
-    </p>
-    <button id="btnCalcular">Calcular quanto falta na AVT</button>
-    <button id="btnReset">Resetar valores</button>
+    <div class="notas-container">
+        <div>
+            <p>Nota Av1</p>
+            <input type="number" id="inAv1">
+        </div>
+        <div>
+            <p>Nota Av2</p>
+            <input type="number" id="inAv2">
+        </div>
+    </div>
 
-    <pre id="outMedia"></pre>
+    <div class="btns">
+        <button id="btnCalcular">Calcular quanto falta na AVT, Deus o tenha</button>
+        <button id="btnReset">Resetar valores</button>
+    </div>
+
+    <p id="outMedia"></p>
     <script src="media.js"></script>
 </body>
+
 </html>

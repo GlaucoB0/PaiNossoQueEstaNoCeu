@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.notas-container{
+    text-align: center;
+}
+.notas-container div{
+    display: flex;
+    flex-direction: column;
+}
+.notas-container div p{
+    text-align: start;
+    font-weight: bold;
+}
+
+.btns{
+    text-align: center;
+}
+input{
+    height: 30px;
+    border-radius: 8px;
+}
+
+#outMedia{
+    text-align: center;
+}
