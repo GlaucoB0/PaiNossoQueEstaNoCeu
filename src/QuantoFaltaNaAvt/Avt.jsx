@@ -7,11 +7,24 @@ const Avt = () => {
 
 
 
-    const [av1, setAv1] = useState(null)
-    const [av2, setAv2] = useState(null)
+    const [av1, setAv1] = useState('')
+    const [av2, setAv2] = useState('')
 
     const calcularMedia = () => {
         event.preventDefault()
+
+        if (isNaN(av1) || isNaN(av2) ) {
+            alert('é pra escrever numero ó jumento')
+            return
+        }
+        if (av1 > 10 || av1 < 0 || av1 > 10 || av2 < 0 || av2 > 10 ) {
+            alert('o pnc escreva tua nota direito plmds')
+            return
+        }
+        if (av1 == ''  || av2 == ''){
+            alert('vai calcular oque ai ')
+            return
+        }
 
         let media = 0
         let avt = 0

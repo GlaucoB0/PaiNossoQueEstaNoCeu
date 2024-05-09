@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Calcular.css'
 
-const Calcular = () => {
+const Calcular = ({calcularMedia}) => {
     return (
-        <button id='calcular'>Calcular</button>
+        <button onClick={calcularMedia} id='calcular'>Calcular</button>
     )
 }
 

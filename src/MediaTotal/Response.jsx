@@ -4,7 +4,7 @@ import './Response.css'
 
 const Response = () => {
     const verificaParam = new URL(window.location.href).searchParams
-
+    
     const media = verificaParam.get('media')
     const avt = verificaParam.get('avt')
 
@@ -13,7 +13,7 @@ const Response = () => {
         return (
             <div className='container-response'>
                 <House />
-                <span className='green'>Você tirou média: {media}</span>
+                <span className='green'>Você tirou média: {parseFloat(media).toFixed(2)}</span>
                 <div>
                     <h1>Resultado</h1>
                     <p className='subtitulo'>{media < 6 ? 'Bixo Burro do carai vai estudar mongoloide KKKKKKKKK plmds' : 'Passou bonito visse, quero ser ingual voce quando eu crescer'}</p>
