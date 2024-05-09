@@ -12,7 +12,7 @@ const Media = () => {
     const calcularMedia = () => {
         event.preventDefault()
 
-        if(av1 == null || av2 == null || avt == null){
+        if(av1 == null || av2 == null || avt == null || av1>10 || av1 < 0 || av1>10 || av2 < 0 || av2>10 || avt < 0 || avt>10){
             alert('o pnc escreva tua nota direito plmds')
             return
         }
