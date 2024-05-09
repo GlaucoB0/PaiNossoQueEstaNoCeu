@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../Components/Button/Button'
+import Button from '../../Components/Button/Button'
 import './Home.css'
-import '../Components/Container.css'
-import Img from '../img/assustado.png'
+import '../../Components/Container.css'
+import Img from '../../img/assustado.png'
 
 const Home = () => {
     return (
@@ -17,7 +17,8 @@ const Home = () => {
             <p className='subtitulo'>Que Titia Marcia esteja com todos nós amém</p>
             <div>
                 <Button href={'/MediaTotal'} text={'Media total do trimeste'} />
-                <Button href={'/QuantoFaltaNaAvt'} text={'Nota minina da Avt para passar'} />
+                <Button href={'/QuantoFaltaNaAvt'} text={'Qual nota preciso tirar na Avt?'} />
+                <Button href={'/QuantoPrecisoNaRec'} text={'Qual nota preciso tirar na Recuperação?'}/>
             </div>
         </div>
     )

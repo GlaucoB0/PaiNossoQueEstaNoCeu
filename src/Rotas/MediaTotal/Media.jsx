@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Input from '../Components/Input/Input'
-import Calcular from '../Components/BtnCalcular/Calcular'
-import House from '../Components/HomeIcon/House'
+import Input from '../../Components/Input/Input'
+import Calcular from '../../Components/BtnCalcular/Calcular'
+import House from '../../Components/HomeIcon/House'
 
 const Media = () => {
 
