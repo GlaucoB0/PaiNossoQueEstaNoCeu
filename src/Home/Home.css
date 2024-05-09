@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    height: 100vh;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100px;
+    border-radius: 100%;
+}
+.green{
+    color: #6c82d3;
+    font-weight: bold;
+}
+.subtitulo{
+    color: rgb(185, 185, 185);
+}
