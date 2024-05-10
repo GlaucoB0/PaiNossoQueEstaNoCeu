@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './main.css'
+import { Analytics } from "@vercel/analytics/react"
 
 
 import {
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Analytics/>
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
