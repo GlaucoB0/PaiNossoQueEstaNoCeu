@@ -26,3 +26,12 @@
 .container section h1{
     font-size:2rem;
 }
+@media (max-width: 466px) {
+    .container{
+        background: transparent;
+        height: 100vh;
+    }
+    body{
+        background-color: rgb(29, 29, 29);
+    }
+}
