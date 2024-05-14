@@ -30,7 +30,7 @@ const Avt = () => {
         let avt = 0
 
         while (media < 6) {
-avt += 0.5
+            avt += 0.5
             media = ((av1 * 25) + (av2 * 25) + (avt * 50)) / 100
             
         }

@@ -11,7 +11,8 @@ const Input = ({placeholder, av}) => {
     av(nota)
   }
   return (
-    <input type="text" className='Input' placeholder={placeholder} onChange={()=>verificarString()}/>
+      <input type="text" className='Input' placeholder={placeholder} onChange={()=>verificarString()}/>
+
   )
 }
 
