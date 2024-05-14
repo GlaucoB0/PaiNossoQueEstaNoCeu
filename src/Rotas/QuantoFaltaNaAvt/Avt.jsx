@@ -29,7 +29,7 @@ const Avt = () => {
         let media = 0
         let avt = 0
 
-        while (media <= 6) {
+        while (media < 6) {
             media = ((av1 * 25) + (av2 * 25) + (avt * 50)) / 100
             avt += 1
         }
