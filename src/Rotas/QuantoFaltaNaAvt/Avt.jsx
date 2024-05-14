@@ -31,7 +31,7 @@ const Avt = () => {
 
         while (media < 6) {
             media = ((av1 * 25) + (av2 * 25) + (avt * 50)) / 100
-            avt += 1
+            avt += 0.5
         }
         window.location.href = `/Response?avt=${avt}`
     }
