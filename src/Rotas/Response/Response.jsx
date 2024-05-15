@@ -56,12 +56,12 @@ const Response = () => {
 
     if (mediaRec) {
 
-        let rec6 = (6 + notaAlta) / 2
-        let rec8 = (7 + notaAlta) / 2
-        let rec10 = (10 + notaAlta) / 2
+        let rec6 = (6 + mediaRec) / 2
+        let rec8 = (7 + mediaRec) / 2
+        let rec10 = (10 + mediaRec) / 2
 
-        if (rec6 < notaAlta) {
-            rec6 = notaAlta
+        if (rec6 < mediaRec) {
+            rec6 = mediaRec
         }
         if (rec8 < mediaRec) {
             rec8 = mediaRec
