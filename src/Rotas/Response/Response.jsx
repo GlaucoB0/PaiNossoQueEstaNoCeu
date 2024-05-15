@@ -56,9 +56,13 @@ const Response = () => {
 
     if (mediaRec) {
 
-        let rec8 = (7 + mediaRec) / 2
-        let rec10 = (10 + mediaRec) / 2
+        let rec6 = (6 + notaAlta) / 2
+        let rec8 = (7 + notaAlta) / 2
+        let rec10 = (10 + notaAlta) / 2
 
+        if (rec6 < notaAlta) {
+            rec6 = notaAlta
+        }
         if (rec8 < mediaRec) {
             rec8 = mediaRec
         }
@@ -66,20 +70,36 @@ const Response = () => {
             rec10 = mediaRec
         }
 
+        if (recu <= 10) {
+            return (
+                <div className='container-response'>
+                    <House />
+                    <span className='green'>Você precisa tirar: {recu}</span>
+                    <div>
+                        <h1>Alguns casos:</h1>
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>6</strong> na recuperação, sua média ficará <strong className='green'>{rec6}</strong></p><br />
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>8</strong> na recuperação, sua média ficará <strong className='green'>{rec8}</strong></p><br />
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>10</strong> na recuperação, sua média ficará <strong className='green'>{rec10}</strong></p>
+                    </div>
 
-        return (
-            <div className='container-response'>
-                <House />
-                <span className='green'>Quer aumentar sua nota?</span>
-                <div>
-                    <h1>Alguns casos:</h1>
-                    <p className='subtitulo'> Para passar se arrastando precisa tirar nota <strong className='green'>{recu}</strong> na recuperação</p><br />
-                    <p className='subtitulo'> Caso tire nota <strong className='green'>8</strong> na recuperação, sua média ficará <strong className='green'>{rec8}</strong></p><br />
-                    <p className='subtitulo'> Caso tire nota <strong className='green'>10</strong> na recuperação, sua média ficará <strong className='green'>{rec10}</strong></p>
                 </div>
+            )
+        } else {
 
-            </div>
-        )
+            return (
+                <div className='container-response'>
+                    <House />
+                    <span className='green'>Passar você não vai</span>
+                    <div>
+                        <h1>Alguns casos:</h1>
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>6</strong> na recuperação, sua média ficará <strong className='green'>{rec6}</strong></p><br />
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>8</strong> na recuperação, sua média ficará <strong className='green'>{rec8}</strong></p><br />
+                        <p className='subtitulo'> Caso tire nota <strong className='green'>10</strong> na recuperação, sua média ficará <strong className='green'>{rec10}</strong></p>
+                    </div>
+
+                </div>
+            )
+        }
     }
 
     if (notaAlta) {
